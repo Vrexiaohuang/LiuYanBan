@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "SearchBar":"../../components/searchBar/index"
+  },
+  "navigationBarTitleText":"一职留言板",
+  "navigationBarBackgroundColor": "#1cbbfa",
+  "backgroundColorTop": "#1cbbfa",
+  "navigationBarTextStyle":"white",
+  "enablePullDownRefresh":true
+}

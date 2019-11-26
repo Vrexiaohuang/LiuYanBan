@@ -1,0 +1,18 @@
+<!--pages/myself/myself.wxml-->
+<!-- <text>pages/myself/myself.wxml</text> -->
+<view>
+  <view class="userinfo">
+  <image wx:if="{{userInfo != null}}" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover" />
+  <image wx:else class="userinfo-avatar" src="../../images/myself.png" mode="cover" />
+    <view>
+      <text wx:if="{{userInfo != null}}" class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view wx:else style="display:flex;flex-direction: column;">
+      <text class="userinfo-nickname">请登录</text>
+      <button open-type="getUserInfo" bindgetuserinfo="login" class="shouquanBtn" size="mini">点击授权</button>
+      </view>
+      
+    </view>
+      
+  </view>
+
+</view>

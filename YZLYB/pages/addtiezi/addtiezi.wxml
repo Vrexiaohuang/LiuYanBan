@@ -1,0 +1,45 @@
+<!--pages/addtiezi/addtiezi.wxml-->
+<form bindsubmit="fabuBtn" style="width:100%">
+
+<view class="box">
+
+
+
+<view class="oneline"><text>标题：</text><input name="title" class="inputlabel" placeholder="请输入标题....."></input></view>
+<view class="oneline"><text>分类：</text>
+
+<!--=====================================================================-->
+<view class="product-list">
+ <!--条件选择-->
+ <view class="choice-bar">
+  <view bindtap="opens" data-item="1" class="chioce-item" hover-class="click-once-opaque">{{start}}
+   <image class="icon-chioce" src="{{!isstart?openimg: offimg}}"></image>
+  </view>
+  <cover-view class="sorting-list{{!isstart?' chioce-list-hide':' chioce-list-show'}}">
+   <cover-view wx:for="{{slist}}" catchtap="onclicks1" data-index="{{index}}" class="sorting-item" hover-class="click-once" wx:key="userInfoListId" >{{item.name}}</cover-view>
+  </cover-view>
+ </view>
+</view>
+<!--=====================================================================-->
+</view>
+<view class="oneline"><text>内容：</text></view>
+<textarea name="content" class="{{isstart?'hidden':'inputarea'}}" placeholder="请输入内容....."></textarea>
+
+<view class="{{isstart?'hidden':'images'}}">
+<view wx:for="{{chooseImages}}">
+  <image class="oneimage"  src="{{item}}" style="padding:0px;"></image>
+  <image class="closeBtn" src="../../images/close.png" data-index="{{index}}" bindtap="closeBtn"></image>
+  </view>
+  
+  <image class="oneimage" src="../../images/camera.png" bindtap="chooseImages"></image>
+</view>
+
+<button class="{{isstart?'hidden':'fabuBtn'}}" style="width: 88%;" form-type="submit">发帖</button>
+<text class="{{isstart?'hidden':'infotext'}}">*注意！发送含有色情，暴力，赌博等信息的用户会遭到封禁！</text>
+
+
+
+</view>
+
+</form>
+

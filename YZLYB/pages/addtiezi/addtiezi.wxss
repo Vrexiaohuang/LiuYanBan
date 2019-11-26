@@ -1,0 +1,155 @@
+/* pages/addtiezi/addtiezi.wxss */
+/*====================================================================*/
+.product-list {
+  /* background-color: red;
+ width: 100%;
+ box-sizing: border-box; */
+  /* position: relative;
+  top: -30rpx; */
+  height: 80rpx;
+  width: 83%;
+}
+  
+  
+.choice-bar {
+ display: flex;
+ width: 100%;
+ /* font-size: 14px; */
+ background-color: #fff;
+ /**z-index: 0;**/
+}
+.chioce-item {
+ border-radius: 50rpx;
+  box-shadow:0rpx 0rpx 15rpx 0rpx #949494;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0 22rpx;
+ width: 100%;
+ height: 80rpx;
+ /* border-top: 1rpx solid #ddd;
+ border-bottom: 1rpx solid #ddd;
+ border-left: 1rpx solid #ddd; */
+ /*border-right: 1rpx solid #ddd;*/
+}
+  
+.icon-chioce {
+ height: 20rpx;
+ width: 34rpx;
+}
+.district-list,.sorting-list,.filter-list {
+ margin-top: 2rpx;
+ position: absolute;
+ top: 235rpx;
+  left: 180rpx;
+  width: 60%;
+
+ background-color: #fff;
+ z-index: 10;
+ font-size: 14px;
+ border-bottom: 1rpx solid #ddd;
+ box-shadow:0rpx 0rpx 15rpx 0rpx #949494;
+}
+.chioce-list-hide {
+ display: none !important;
+}
+.chioce-list-show {
+ /**top: 80rpx;**/
+ animation: slide 500ms;
+}
+  
+.sorting-item {
+ height: 80rpx;
+ line-height: 80rpx;
+ padding: 0 40rpx;
+ width: 81%;
+ z-index: 10;
+ 
+ border-bottom: 1rpx solid #ddd;
+}
+/*====================================================================*/
+
+
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oneline{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+
+.infotext{
+  color: rgb(165, 165, 165);
+  width: 500rpx;
+  font-size: 35rpx;
+  margin-top: 35rpx;
+  align-items: center;
+  display: block;
+}
+
+.inputlabel{
+  padding: 15rpx;
+  padding-left:25rpx;
+  border-radius: 50rpx;
+  width: 77%;
+  box-shadow:0rpx 0rpx 15rpx 0rpx #949494;
+}
+
+.inputarea{
+  width: 82%;
+  padding: 25rpx;
+  margin-top: 25rpx;
+  border-radius: 25rpx;
+  box-shadow:0rpx 0rpx 15rpx 0rpx #949494;
+}
+
+.hidden{
+  display: none;
+}
+
+.fabuBtn{
+  color: white;
+  height: 80rpx;
+  margin-top: 60rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  box-shadow:0rpx 0rpx 15rpx 0rpx #949494;
+  border-radius: 50rpx;
+  background-color: #1cbbfa;
+}
+
+.images{
+  margin-top: 40rpx;
+  width: 90%;
+  display: flex;
+  flex-direction: columns;
+  flex-wrap:wrap;
+}
+
+.oneimage{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 30rpx;
+  margin: 12rpx;
+  background-color: #e0e0e0;
+  box-shadow:0rpx 0rpx 15rpx 0rpx #949494;
+}
+
+.closeBtn{
+  width: 35rpx;
+  height: 35rpx;
+  position: relative;
+  top: -120rpx;
+  right: 35rpx;
+  border-radius: 50rpx;
+
+}
+

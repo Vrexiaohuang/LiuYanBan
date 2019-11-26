@@ -1,0 +1,30 @@
+<!--pages/tiezi/tiezi.wxml-->
+<view class="box">
+
+<view class="block">
+  <view class="block-left">
+    <image class="avatar" src="{{tieziInfo.user.avatarUrl}}"></image>
+    <text class="nickName">{{tieziInfo.user.nickName}}</text>
+  </view>
+  <view class="block-right">
+    <text class="title">{{tieziInfo.title}}</text>
+    <text class="date">{{tieziInfo.category}}</text>
+    
+    <text class="content">{{tieziInfo.content}}</text>
+    <view wx:if="{{tieziInfo.images.length != 0}}" class="images">
+    <image class="image" wx:for="{{tieziInfo.images}}" src="{{item}}" mode="aspectFill"></image>
+    </view>
+
+    <text class="date" style="text-align: right;margin-right:35rpx;">{{tieziInfo.releasetime}}</text>
+  </view>
+</view>
+
+<form class="bottom-form">
+<view class="bottom-reply">
+
+<input placeholder="输入回复......."></input>
+<button>回复</button>
+
+</view>
+</form>
+</view>

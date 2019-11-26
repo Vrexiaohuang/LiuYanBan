@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<view >
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+
+  <!-- <tabBar></tabBar> -->
+
+  <image class="plus-btn" bindtap="plusBtnClick" src="../../images/plus.png">
+  </image>
+
+  <view class="box">
+  </view>
+  <view >
+    <SearchBar id="SearchBar" addflag="{{addflag}}" addimg="{{addimg}}" bind:addhandle="addhandle" searchstr="{{searchstr}}" bind:searchList="searchList" bind:endsearchList="endsearchList" bind:cancelsearch="cancelsearch" bind:activity_clear="activity_clear">
+    </SearchBar>
+</view>
+
+<swiper class="lunbo" indicator-dots="true" indicator-active-color="#FFFFFF">
+<swiper-item><image src='../../images/lunbo-1.jpg' /></swiper-item>
+</swiper>
+
+<navigator class="block-back" wx:for="{{tiezis}}" url="/pages/tiezi/tiezi?id={{item.id}}">
+  <view class="title">{{item.title}}</view>
+  <view class="_class">分类：{{item.category}}</view>
+  <view class="divLine"></view>
+  <view class="content"><text>{{item.content}}</text></view>
+  <view class="bottom">
+  <view class="date">{{item.releasetime}}</view>
+  <view class="fatieren">
+    <image src="{{item.userInfo.avatarUrl}}"></image>
+    <span>{{item.userInfo.nickName}}</span>
+  </view>
+  </view>
+</navigator>
+
+<!-- <view class="block-back">
+  <view class="title">这是一个帖子的标题</view>
+  <view class="_class">分类：XXX</view>
+  <view class="divLine"></view>
+  <view class="content">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容.......</view>
+  <view class="bottom">
+  <view class="date">2019年11月21日 14:43</view>
+  <view class="fatieren">
+    <image src="../../images/logo.jpg"></image>
+    <span>MagicBox魔盒</span>
+  </view>
+  </view>
+  
+</view> -->
+
+</view>

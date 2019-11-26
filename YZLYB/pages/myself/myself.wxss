@@ -1,0 +1,30 @@
+/* pages/myself/myself.wxss */
+.userinfo{
+  height: 250rpx;
+  display: flex;
+  align-items: center;
+  background-color: #1cbbfa;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 30rpx;
+  padding: -1rpx;
+  margin-left: 60rpx;
+  border-radius: 50%;
+  background-color: white;
+
+  
+  box-shadow:5rpx 5rpx 15rpx 0rpx rgb(37, 37, 37);
+}
+
+.shouquanBtn{
+  width: 128rpx;
+}
+
+.userinfo-nickname {
+  margin: 10rpx;
+  color: rgb(255, 255, 255);
+  font-size: 40rpx;
+}
